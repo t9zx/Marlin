@@ -130,7 +130,7 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_RAMPS_14_EFF
+  #define MOTHERBOARD BOARD_RAMPS_14_EFB
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
@@ -415,7 +415,7 @@
 #define TEMP_SENSOR_5 0
 #define TEMP_SENSOR_6 0
 #define TEMP_SENSOR_7 0
-#define TEMP_SENSOR_BED 0
+#define TEMP_SENSOR_BED 1000
 #define TEMP_SENSOR_PROBE 0
 #define TEMP_SENSOR_CHAMBER 0
 
@@ -951,7 +951,7 @@
  * Specify a Probe position as { X, Y, Z }
  */
 // the more negative the Z offset, the closer the gap gets
-#define NOZZLE_TO_PROBE_OFFSET { -35, 0, -1.12 }
+#define NOZZLE_TO_PROBE_OFFSET { -35, 0, -1.27 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1087,8 +1087,8 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 150 
-#define Y_BED_SIZE 150 
+#define X_BED_SIZE 200 
+#define Y_BED_SIZE 200 
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
